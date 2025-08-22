@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+img {
+    width: 350px;
+}
+
+table {
+    background-color: yellow;
+    width: 500px;
+    height: 200px;
+}
+
+caption {
+    background-color: red;
+    width: 500px;
+}
+
+td, th {
+    border: 1px solid black;
+}
