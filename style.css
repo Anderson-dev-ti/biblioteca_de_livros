@@ -91,10 +91,19 @@ main section#adicionar_novo_livro h2 {
     text-align: center;
 }
 
+main section#estatisticas {
+    background-color: rgba(255, 255, 255, 0.441);
+    margin-bottom: 30px;
+}
+
+main section#estatisticas h2 {
+    text-align: center;
+}
+
 table {
     width: 100%;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.441);
+    border-collapse: collapse;
 }
 
 caption {
@@ -104,4 +113,55 @@ caption {
 
 td, th {
     border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: white;
+}
+
+main section#dicas_de_leitura {
+    background-color: rgba(255, 255, 255, 0.441);
+}
+
+main section#dicas_de_leitura h2 {
+    text-align: center;
+}
+
+main section#dicas_de_leitura ol {
+    list-style-position: inside;
+}
+
+main section#dicas_de_leitura iframe {
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
+
+p.voltar {
+    position: absolute;
+    background-color: blue;
+    right: 200px;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: normal;
 }
