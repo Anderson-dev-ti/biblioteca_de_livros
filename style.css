@@ -1,19 +1,105 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+header nav ul {
+    margin: 0px auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 5px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+header nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    transition-duration: .5s;
+}
+
+main {
+    background-image: url(imagens/livro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main section#meus-livros h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+main section {
+    width: 1000px;
+    margin: auto;
+}
+
+main div.conteudo-secao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+main div.conteudo-secao div {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.499);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 img {
-    width: 350px;
+    width: 100%;
+    height: 300px;
+}
+
+main section#adicionar_novo_livro  {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.441);
+    margin-bottom: 30px;
+}
+
+main section#adicionar_novo_livro h2 {
+    text-align: center;
 }
 
 table {
-    background-color: yellow;
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.441);
 }
 
 caption {
-    background-color: red;
-    width: 500px;
+    font-weight: bold;
+    width: 100%;
 }
 
 td, th {
