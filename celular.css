@@ -23,6 +23,7 @@ header nav ul {
     align-items: center;
     height: 50px;
     padding: 0px 5px;
+    font-size: .8em;
 }
 
 header nav ul li {
