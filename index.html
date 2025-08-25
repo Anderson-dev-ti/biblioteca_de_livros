@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha biblioteca de livros</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="small.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="celular.css" media="screen and (min-width: 601px) and (max-width: 767px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="telas_grandes.css" media="screen and (min-width: 1200px)">
 </head>
 <body>
     <header id="topo">
@@ -88,126 +92,120 @@
         </section>
 
         <section id="adicionar_novo_livro">
-            <div class="conteudo-secao2">
             <h2>Adicionar Novo Livro</h2>
-                <form action="">
-                    <fieldset>
-                        <legend>Informações do Livro</legend>
-                        <label for="titulo">Título do livro: </label>
-                        <input type="text" id="titulo" required minlength="4" placeholder="Nome do livro">
-                        <br>
+            <form action="">
+                <fieldset>
+                    <legend>Informações do Livro</legend>
+                    <label for="titulo">Título do livro: </label>
+                    <input type="text" id="titulo" required minlength="4" placeholder="Nome do livro">
+                    <br>
 
-                        <label for="autor">Autor: </label>
-                        <input type="text" id="autor" required minlength="4" placeholder="Nome do autor">
-                        <br>
+                    <label for="autor">Autor: </label>
+                    <input type="text" id="autor" required minlength="4" placeholder="Nome do autor">
+                    <br>
 
-                        <label for="paginas">Número de Páginas: </label>
-                        <input type="number" id="paginas">
-                        <br>
+                    <label for="paginas">Número de Páginas: </label>
+                    <input type="number" id="paginas">
+                    <br>
 
-                        <label for="data_de_lancamento">Data de Lançamento: </label>
-                        <input type="date" id="data_de_lancamento">
+                    <label for="data_de_lancamento">Data de Lançamento: </label>
+                    <input type="date" id="data_de_lancamento">
 
-                        <br>
-                        <input type="submit" value="Enviar">
-                    </fieldset>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
 
-                    <fieldset>
-                        <legend>Status da leitura</legend>
-                        <span>
-                            <label for="status">Lido</label>
-                            <input type="radio" name="status" id="status">
-                        </span>
-                        <span>
-                            <label for="status">Lendo</label>
-                            <input type="radio" name="status" id="status">
-                        </span>
-                        <span>
-                            <label for="status">Quero Ler</label>
-                            <input type="radio" name="status" id="status">
-                        </span>
-                        <span>
-                            <input type="submit" value="Salvar Livro">
-                        </span>   
-                    </fieldset>
-                </form>
-            </div>    
+                <fieldset>
+                    <legend>Status da leitura</legend>
+                    <span>
+                        <label for="status">Lido</label>
+                        <input type="radio" name="status" id="status">
+                    </span>
+                    <span>
+                        <label for="status">Lendo</label>
+                        <input type="radio" name="status" id="status">
+                    </span>
+                    <span>
+                        <label for="status">Quero Ler</label>
+                        <input type="radio" name="status" id="status">
+                    </span>
+                    <span>
+                        <input type="submit" value="Salvar Livro">
+                    </span>   
+                </fieldset>
+            </form>
         </section>
         <section id="estatisticas">
-            <div class="conteudo-secao3">
-                <h2>Estatísticas da Biblioteca</h2>
-                <table>
-                    <caption>Total de Livros por Gênero</caption>
-                    <thead>
+            <h2>Estatísticas da Biblioteca</h2>
+            <table>
+                <caption>Total de Livros por Gênero</caption>
+                <thead>
+                    <tr>
+                        <th>Gênero</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                    <tbody>
                         <tr>
-                            <th>Gênero</th>
-                            <th>Quantidade</th>
+                            <td>Terror</td>
+                            <td>192</td>
                         </tr>
-                    </thead>
-                        <tbody>
-                            <tr>
-                                <td>Terror</td>
-                                <td>192</td>
-                            </tr>
-                            <tr>
-                                <td>Ficção</td>
-                                <td>97</td>
-                            </tr>
-                            <tr>
-                                <td>Romance</td>
-                                <td>120</td>
-                            </tr>
-                            <tr>
-                                <td>Infantil</td>
-                                <td>196</td>
-                            </tr>
-                            <tr>
-                                <td>Informática e Tecnologia</td>
-                                <td>57</td>
-                            </tr>
-                            <tr>
-                                <td>Autoajuda </td>
-                                <td>94</td>
-                            </tr>
-                            <tr>
-                                <td>Mistério</td>
-                                <td>87</td>
-                            </tr>
-                            <tr>
-                                <td>Fantasia</td>
-                                <td>125</td>
-                            </tr>
-                            <tr>
-                                <td>Drama</td>
-                                <td>71</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="2">Total de livros em nossa biblioteca: 1034</th>
-                            </tr>
-                        </tfoot>
-                </table>
-            </div>
+                        <tr>
+                            <td>Ficção</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>Romance</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Infantil</td>
+                            <td>196</td>
+                        </tr>
+                        <tr>
+                            <td>Informática e Tecnologia</td>
+                            <td>57</td>
+                        </tr>
+                        <tr>
+                            <td>Autoajuda </td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Mistério</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <td>Fantasia</td>
+                            <td>125</td>
+                        </tr>
+                        <tr>
+                            <td>Drama</td>
+                            <td>71</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total de livros em nossa biblioteca: 1034</th>
+                        </tr>
+                    </tfoot>
+            </table>
         </section>
         <section id="dicas_de_leitura">
-            <div class="conteudo-secao4">
-                <h2>Dicas de leitura</h2>
-                <ol>
-                    <li>A Guerra dos Tronos - George R. R. Martin</li>
-                    <li>Alice no País das Maravilhas - Lewis Carroll</li>
-                    <li>Como eu era antes de você - Jojo Moyes</li>
-                    <li>Dinheiro Sujo - Lee Child</li>
-                    <li>Don Quixote - Miguel de Cervantes</li>
-                    <li>It - A Coisa - Stephen King</li>
-                    <li>Moby Dick - Herman Melville</li>
-                    <li>O Problema dos Três Corpos - Cixin Liu</li>
-                    <li>O Senhor dos Anéis - John R. R. Tolkien</li>
-                    <li>O Último Desejo - Andrzej Sapkowski</li>
-                </ol>
+            <h2>Dicas de leitura</h2>
+            <ol>
+                <li>A Guerra dos Tronos - George R. R. Martin</li>
+                <li>Alice no País das Maravilhas - Lewis Carroll</li>
+                <li>Como eu era antes de você - Jojo Moyes</li>
+                <li>Dinheiro Sujo - Lee Child</li>
+                <li>Don Quixote - Miguel de Cervantes</li>
+                <li>It - A Coisa - Stephen King</li>
+                <li>Moby Dick - Herman Melville</li>
+                <li>O Problema dos Três Corpos - Cixin Liu</li>
+                <li>O Senhor dos Anéis - John R. R. Tolkien</li>
+                <li>O Último Desejo - Andrzej Sapkowski</li>
+            </ol>
 
-                <iframe width="560" height="500" src="https://www.youtube.com/embed/A_ub-o_IeJ4?si=Xq-vIkXJvbiXO2b9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            <iframe width="560" height="500" src="https://www.youtube.com/embed/A_ub-o_IeJ4?si=Xq-vIkXJvbiXO2b9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
             
     </main>

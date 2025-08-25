@@ -13,7 +13,7 @@ header {
 
 header nav ul {
     margin: 0px auto;
-    max-width: 900px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +48,11 @@ main {
     padding: 10px;
 }
 
+main section#meus-livros {
+    background-color: red;
+    width: 1200px;
+}
+
 main section#meus-livros h2 {
     text-align: center;
     padding: 10px;
@@ -55,14 +60,14 @@ main section#meus-livros h2 {
 }
 
 main section {
-    width: 950px;
+    width: 1200px;
     margin: auto;
 }
 
 main div.conteudo-secao {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -155,7 +160,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-
 }
 
 p.voltar {
