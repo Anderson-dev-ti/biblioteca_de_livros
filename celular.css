@@ -13,22 +13,26 @@ body {
 header {
     text-align: center;
     background-color: lightgreen;
+    width: 97.5vw;
+    height: 130px;
 }
 
 header nav ul {
     margin: 0px auto;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
     padding: 0px 5px;
     font-size: .8em;
+    width: 100%;
 }
 
 header nav ul li {
     list-style-type: none;
     list-style-position: inside;
+    width: 97.6vw;
+    padding: 2px;
 }
 
 header nav ul li a {
@@ -37,6 +41,8 @@ header nav ul li a {
     padding: 5px;
     background-color: black;
     border-radius: 30px;
+    width: 97vw;
+    display: inline-block;
 }
 
 header nav ul li a:hover {
