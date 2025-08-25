@@ -12,37 +12,35 @@ body {
 
 header {
     text-align: center;
-    background-color: darkblue;
-    width: 97.5vw;
-    height: 130px;
+    background-color: yellow;
+    height: 140px;
 }
 
 header nav ul {
     margin: 0px auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
     padding: 0px 5px;
-    font-size: .8em;
-    width: 100%;
+    flex-direction: column;
 }
 
 header nav ul li {
     list-style-type: none;
     list-style-position: inside;
-    width: 97.6vw;
-    padding: 2px;
+    padding: 5px;
+    margin: 1px;
+    background-color: black;
+    border-radius: 30px;
+    width: 100%;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     padding: 5px;
-    background-color: black;
-    border-radius: 30px;
-    width: 97vw;
-    display: inline-block;
+    width: 250vw;
 }
 
 header nav ul li a:hover {
