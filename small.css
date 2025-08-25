@@ -13,7 +13,6 @@ body {
 header {
     text-align: center;
     background-color: orange;
-    height: 140px;
     width: 100%;
 }
 
@@ -56,6 +55,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
+    padding-top: 20px;
 }
 
 main section#meus-livros h2 {
