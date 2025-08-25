@@ -12,7 +12,7 @@ body {
 
 header {
     text-align: center;
-    background-color: orange;
+    background-color: lightgreen;
     width: 100%;
 }
 
@@ -168,7 +168,7 @@ iframe {
 footer {
     background-color: darkblue;
     color: white;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,9 +189,10 @@ footer a:hover {
 p.voltar {
     position: absolute;
     background-color: white;
-    padding: 8px 5px;
+    padding: 3px 5px;
     right: 2px;
-    bottom: 35px;
+    bottom: 5px;
+    font-size: .8em;
     border-radius: 50px;
 }
 
