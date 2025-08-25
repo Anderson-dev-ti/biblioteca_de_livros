@@ -200,3 +200,7 @@ p.voltar a {
     font-weight: normal;
     color: black;
 }
+
+footer p.desenvolvedor {
+    padding: 0px 5px;
+}
